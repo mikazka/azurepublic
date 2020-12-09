@@ -70,7 +70,7 @@ Add-Content -LiteralPath C:\New-WVDSessionHost.log "Downloading WVD Agent"
     Invoke-WebRequest -Uri $WVDAgentURI -OutFile "$LocalWVDpath$WVDAgentInstaller"
 
 ################################
-#    Install WVD Componants    #
+#    Install WVD Components    #
 ################################
 Add-Content -LiteralPath C:\New-WVDSessionHost.log "Installing WVD Bootloader"
 $bootloader_deploy_status = Start-Process `
