@@ -48,12 +48,7 @@ else {
         -BackgroundColor Black `
         "c:\temp\wvd directory already exists"
 }
-New-Item -Path c:\ -Name New-WVDSessionHost.log -ItemType File
-Add-Content `
--LiteralPath C:\New-WVDSessionHost.log `
-"
-RegistrationToken = $RegistrationToken
-"
+Add-Content -LiteralPath C:\New-WVDSessionHost.log "RegistrationToken = $RegistrationToken"
 
 #################################
 #    Download WVD Components    #
