@@ -3,11 +3,7 @@
 ##############################
 Param (        
     [Parameter(Mandatory=$true)]
-        [string]$ProfilePath,
-    [Parameter(Mandatory=$true)]
-        [string]$RegistrationToken,
-    [Parameter(Mandatory=$false)]
-        [string]$Optimize = $true           
+        [string]$RegistrationToken          
 )
 
 ######################
